@@ -16,6 +16,7 @@ async function carregarCSV2(valoratual) {
             valor = valor*inter
             //construir o caminho da imagem
             const imagemPath = `../Imagem/${produto.trim()}.jpg`;
+            console.log(imagemPath)
 
             const card = document.createElement('div');
             card.classList.add('card');
