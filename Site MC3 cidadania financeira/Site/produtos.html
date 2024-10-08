@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Folia Mercado</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3, .card p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Folia Mercado</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h5>*Os valores abaixos são calculados com base na tabela do IPCA, ou seja são valores aproximados aos da época.</h5>
+    <form id="meuFormulario">
+        <label for="mes-ano">Selecione o mês e o ano:</label>
+        <input type="month" id="mes-ano" name="mes-ano" min="1994-01" max="2054-12">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p id="resultado"></p>
+
+    <div class="card-container" id="cardContainer">
+        <!-- Os cards serão inseridos aqui via JavaScript -->
+    </div>
+
+    <script src="../JS/tabela.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 Folia Mercado. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
