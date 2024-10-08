@@ -8,7 +8,7 @@ async function carregarCSV2(valoratual) {
 
         const container = document.getElementById('cardContainer');
         container.innerHTML = ''; // Limpa os cards antigos
-
+        console.log("1")
         linhas.forEach(linha => {
             let [produto, marca, valor] = linha.split(',');
             valor = valor.replace(',', '.'); // Substituir a vírgula por ponto para valor numérico
@@ -16,6 +16,7 @@ async function carregarCSV2(valoratual) {
             valor = valor*inter
             //construir o caminho da imagem
             const imagemPath = `../Imagem/${produto.trim()}.jpg`;
+            console.log("2")
             console.log(imagemPath)
 
             const card = document.createElement('div');
