@@ -81,7 +81,7 @@ document.getElementById('meuFormulario').addEventListener('submit', async functi
     if (valor) {
         const valorNumerico = parseFloat(valor.replace(',', '.')); // Substitui a vírgula por ponto
         const SalarioMinimo = await obterValorCelula(linha, 2);
-        document.getElementById('SalarioMinimo').innerText = 'Valor: R$ ${parseFloat(SalarioMinimo).toFixed(2)}';
+        document.getElementById('SalarioMinimo').innerText = `Valor: R$ ${parseFloat(SalarioMinimo).toFixed(2)`;
         carregarCSV2(valorNumerico)
     } else {
         document.getElementById('resultado').innerText = 'Célula não encontrada ou valor inválido.';
