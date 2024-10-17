@@ -80,7 +80,7 @@ document.getElementById('meuFormulario').addEventListener('submit', async functi
     // Se o valor for encontrado, converte para número (se houver vírgula, substitui por ponto) e exibe
     if (valor) {
         const valorNumerico = parseFloat(valor.replace(',', '.')); // Substitui a vírgula por ponto
-        const SalarioMinimo = await obterValorCelula(linha, 2);
+        const SalarioMinimo = await obterValorCelula(linha, 3);
         document.getElementById('SalarioMinimo').innerText = `Valor: R$ ${parseFloat(SalarioMinimo).toFixed(2)}`;
         carregarCSV2(valorNumerico)
     } else {
