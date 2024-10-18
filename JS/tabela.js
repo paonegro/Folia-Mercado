@@ -71,7 +71,7 @@ document.getElementById('meuFormulario').addEventListener('submit', async functi
 
 
     // Pega os valores de linha e coluna inseridos no formulário
-    const linha = anoB+mes;
+    const linha = anoB+mes-6;
     const coluna = 2;
 
     // Obtém o valor da célula correspondente
